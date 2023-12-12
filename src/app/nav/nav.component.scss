@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+  .title-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    // background-color: purple;
+
+    .hamburger-menu {
+      height: 100%;
+      width: 10%;
+      @include flex-center();
+      visibility: hidden;
+
+      img {
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .nav-logo {
+      height: 100%;
+      width: 20%;
+      @include flex-center();
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-title {
+      height: 100%;
+      width: 45%;
+      @include flex-center();
+
+      h3 {
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        font-family: "Dancing Script", cursive;
+      }
+    }
+
+    .translate-btn {
+      height: 100%;
+      width: 12%;
+      @include flex-center();
+      //   background-color: yellow;
+
+      p {
+        font-weight: 500;
+        color: white;
+        // padding: 5px;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.24);
+        margin: 0;
+        text-align: center;
+        line-height: 28px;
+        font-size: 13px;
+      }
+    }
+
+    .disclaimer-btn {
+      height: 100%;
+      width: 12%;
+      @include flex-center();
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
