@@ -35,6 +35,7 @@
     .nav-logo {
       height: 100%;
       width: 20%;
+      background: url("../../assets/lips.png")
       @include flex-center();
 
       img {
