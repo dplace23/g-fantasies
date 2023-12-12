@@ -23,7 +23,7 @@
       height: 100%;
       width: 10%;
       @include flex-center();
-      // visibility: hidden;
+      visibility: hidden;
 
       .ham-icon {
         width: 100%;
@@ -40,8 +40,13 @@
       // background: url("../../assets/lips.png");
       @include flex-center();
 
-      img {
-        width: 100%;
+      .logo {
+        width: 70%;
+        height: 60%;
+        background: url(../../assets/lips.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
       }
     }
 
